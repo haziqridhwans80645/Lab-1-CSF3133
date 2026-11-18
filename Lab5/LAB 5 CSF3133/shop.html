@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Campus Bookstore</title>
+<!-- 
+    Error List:
+    1. (shop.html, Line 6): rel="stylesheets" should be rel="stylesheet".
+    2. (shop.html, Line 18): style="color=#1B4F72;" missing colon, should be style="color: #1B4F72;".
+    3. (shop.css, Line 2): font-family has a typo ('Robotto'), should be 'Roboto'.
+    4. (shop.css, Line 3): background-image value uses "paper.gif", which should match lab files.
+    5. (shop.css, Line 4): background-repeat has a space ("no repeat"), should be "no-repeat".
+    6. (shop.css, Line 5): bacground-position is misspelled (missing 'k'), should be "background-position".
+    7. (shop.css, Line 13): background-color rule inside ul is orphaned/misplaced outside a selector.
+    8. (shop.css, Line 18): display: inline should be display: block for a horizontal navbar.
+    9. (shop.css, Line 23): li:a:hover has an invalid pseudo-class syntax, should be li a:hover.
+    10. (shop.css, Line 26): #products selector ID mismatch with HTML table id="product".
+    11. (shop.css, Line 27): border-collapse: collapsed is invalid, should be border-collapse: collapse.
+    12. (shop.css, Line 37): tr:hovered is invalid, should be tr:hover.
+-->
+<!-- Link two Google Fonts: Roboto for general text, Merriweather for headings -->
+<link href="https://fonts.googleapis.com/css?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <!-- Header Section with Background Image -->
+    <header>
+        <h1>Campus Bookstore</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <p>Textbooks, stationery and more for every student.</p>
+        
+        <table id="product">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th class="price-col">Price (RM)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Design Basics</td>
+                    <td>Textbook</td>
+                    <td class="price-col">45.00</td>
+                </tr>
+                <tr>
+                    <td>A4 Notebook</td>
+                    <td>Stationery</td>
+                    <td class="price-col">6.50</td>
+                </tr>
+                <tr>
+                    <td>USB Drive 32GB</td>
+                    <td>Gadget</td>
+                    <td class="price-col">25.00</td>
+                </tr>
+                <tr>
+                    <td>Highlighter Set</td>
+                    <td>Stationery</td>
+                    <td class="price-col">9.90</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Campus Bookstore</p>
+    </footer>
+
+</body>
+</html>

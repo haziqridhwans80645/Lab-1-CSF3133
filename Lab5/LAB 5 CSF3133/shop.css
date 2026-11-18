@@ -1,0 +1,122 @@
+/* Body styling and default font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Main layout wrapper */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 20px auto;
+}
+
+/* Paragraph spacing and line-height */
+p {
+    line-height: 1.6;
+}
+
+/* Heading font styling using Merriweather */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Header section with cover background image and white text */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('books.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation bar dark layout */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Navigation hover effect */
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Active home link styling */
+nav li a.active {
+    background-color: #04AA6D;
+}
+
+/* Table structure and collapsed borders */
+#product {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Table cell borders and padding */
+#product td, #product th {
+    border: 1px solid #ddd;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* Uppercase and centered table header styling */
+#product th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Right-align price column data and header */
+#product th.price-col, #product td.price-col {
+    text-align: right;
+}
+
+/* Alternating table row background colors */
+#product tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table row mouse hover effect */
+#product tr:hover {
+    background-color: #ddd;
+}
+
+/* Subtle footer background, centering, and padding */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+}
